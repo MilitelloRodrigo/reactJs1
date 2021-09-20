@@ -80,6 +80,9 @@ function ExpenseForm(props) {
       </div>
       <div className="new-expense__actions">
         <button type="submit">Guardar</button>
+        <button type="button" onClick={props.onCancel}>
+          Cancelar
+        </button>
       </div>
     </form>
   );
