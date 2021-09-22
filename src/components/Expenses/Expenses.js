@@ -30,16 +30,14 @@ const Exprenses = (props) => {
 
   return (
     <div>
-      <li>
-        <Card className="expenses">
-          <ExpensesFilter
-            selected={filteredYear}
-            onChangeFilter={filterChangeHandler}
-          />
-          <ExpensesChart expenses={filteredExpenses} />
-          <ExpensesList items={filteredExpenses} />
-        </Card>
-      </li>
+      <Card className="expenses">
+        <ExpensesFilter
+          selected={filteredYear}
+          onChangeFilter={filterChangeHandler}
+        />
+        <ExpensesChart expenses={filteredExpenses} />
+        <ExpensesList items={filteredExpenses} />
+      </Card>
     </div>
   );
 };
