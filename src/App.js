@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useBrowserState from "./customHook/useBrowserState";
 import "./App.css";
 import Exprenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
@@ -31,7 +32,8 @@ const expensesMock = [
 ];
 
 function App() {
-  const [expenses, setExpenses] = useState([...expensesMock]);
+  //const [expenses, setExpenses] = useState([...expensesMock]);
+  const [expenses, setExpenses] = useBrowserState([], "gastos");
 
   const addExpenseHandler = (expense) => {
     setExpenses((prevEstate) => {

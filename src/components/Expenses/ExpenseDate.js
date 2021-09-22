@@ -1,8 +1,8 @@
 import "./ExpenseDate.css";
 const ExpenseDate = (props) => {
-  const month = props.date.toLocaleString("es-AR", { month: "long" });
-  const day = props.date.toLocaleString("es-AR", { day: "2-digit" });
-  const year = props.date.getFullYear();
+  const month = new Date(props.date).toLocaleString("es-AR", { month: "long" });
+  const day = new Date(props.date).toLocaleString("es-AR", { day: "2-digit" });
+  const year = new Date(props.date).getFullYear();
   return (
     <div className="expense-date">
       {/* <div>{props.date.toISOString()}</div> */}
