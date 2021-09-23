@@ -7,9 +7,9 @@ const Chart = (props) => {
   const totalMaximun = Math.max(...dataPointValues);
   return (
     <div className="chart">
-      {props.dataPoints.map((dataPoint) => (
+      {props.dataPoints.map((dataPoint, i) => (
         <ChartBar
-          key={dataPoint.lable}
+          key={dataPoint.label}
           label={dataPoint.label}
           value={dataPoint.value}
           maxValue={totalMaximun}

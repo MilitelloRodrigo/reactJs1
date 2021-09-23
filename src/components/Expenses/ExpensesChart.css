@@ -1,0 +1,27 @@
+.expenses-chart button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  border: 1px solid #40005d;
+  background-color: #40005d;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+
+.expenses-chart button:hover,
+.expenses-chart button:active {
+  background-color: #510674;
+  border-color: #510674;
+}
+
+.expenses-chart button.alternative {
+  color: #220131;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.expenses-chart button.alternative:hover,
+.expenses-chart button.alternative:active {
+  background-color: #ddb3f8;
+}
